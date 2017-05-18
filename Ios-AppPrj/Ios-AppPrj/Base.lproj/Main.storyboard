@@ -25,13 +25,83 @@
                                 <rect key="frame" x="149" y="70" width="76" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button test"/>
+                                <connections>
+                                    <segue destination="pGF-fg-dCc" kind="show" id="aun-6R-ZYO"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.39703206688730952" green="1" blue="0.34436799635708593" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="dMJ-9S-3k7" appends="YES" id="oQP-Er-cTL"/>
+                            <outletCollection property="gestureRecognizers" destination="YoD-Pu-Uk3" appends="YES" id="LfE-de-04C"/>
+                            <outletCollection property="gestureRecognizers" destination="9kw-DQ-5SW" appends="YES" id="ArQ-id-c5V"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="dMJ-9S-3k7">
+                    <connections>
+                        <action selector="actioncham:" destination="BYZ-38-t0r" id="uq3-WM-rcL"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <rotationGestureRecognizer id="YoD-Pu-Uk3">
+                    <connections>
+                        <action selector="rotation:" destination="BYZ-38-t0r" id="9hy-X8-Shv"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="9kw-DQ-5SW">
+                    <connections>
+                        <action selector="actionpan:" destination="BYZ-38-t0r" id="W9z-uu-Gk8"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
+        </scene>
+        <!--Man2 View Controller-->
+        <scene sceneID="kzT-wc-nHj">
+            <objects>
+                <viewController id="pGF-fg-dCc" customClass="Man2ViewController" customModule="Ios_AppPrj" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="91x-bB-sLe"/>
+                        <viewControllerLayoutGuide type="bottom" id="3m6-m8-6Jc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jXu-Td-z6R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUO-c8-47P">
+                                <rect key="frame" x="135" y="130" width="106" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Ve man hinh 1">
+                                    <color key="titleColor" red="1" green="0.99667156517022892" blue="0.99273333332403302" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41474002886748551" green="0.58218707961686" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wNs-ru-Gv2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882" y="123"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hxs-1C-BhS">
+            <objects>
+                <viewController id="TvM-Ur-Ed1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T8p-Pz-V67"/>
+                        <viewControllerLayoutGuide type="bottom" id="SMN-9b-zeg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="liO-gb-Beu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H7f-mh-yrA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1586" y="123"/>
         </scene>
     </scenes>
 </document>

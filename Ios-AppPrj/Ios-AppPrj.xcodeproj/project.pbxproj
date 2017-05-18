@@ -12,6 +12,7 @@
 		EABADA9A1ECDCC32006CC59D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EABADA981ECDCC32006CC59D /* Main.storyboard */; };
 		EABADA9C1ECDCC32006CC59D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EABADA9B1ECDCC32006CC59D /* Assets.xcassets */; };
 		EABADA9F1ECDCC32006CC59D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EABADA9D1ECDCC32006CC59D /* LaunchScreen.storyboard */; };
+		EABADAA71ECDE080006CC59D /* Man2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABADAA61ECDE080006CC59D /* Man2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		EABADA9B1ECDCC32006CC59D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EABADA9E1ECDCC32006CC59D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EABADAA01ECDCC32006CC59D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EABADAA61ECDE080006CC59D /* Man2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Man2ViewController.swift; path = ../Man2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				EABADA941ECDCC32006CC59D /* AppDelegate.swift */,
 				EABADA961ECDCC32006CC59D /* ViewController.swift */,
+				EABADAA61ECDE080006CC59D /* Man2ViewController.swift */,
 				EABADA981ECDCC32006CC59D /* Main.storyboard */,
 				EABADA9B1ECDCC32006CC59D /* Assets.xcassets */,
 				EABADA9D1ECDCC32006CC59D /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				EABADA971ECDCC32006CC59D /* ViewController.swift in Sources */,
 				EABADA951ECDCC32006CC59D /* AppDelegate.swift in Sources */,
+				EABADAA71ECDE080006CC59D /* Man2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +264,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Ios-AppPrj/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Hieupd.demo1.Ios-AppPrj";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +278,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Ios-AppPrj/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Hieupd.demo1.Ios-AppPrj";
 				PRODUCT_NAME = "$(TARGET_NAME)";

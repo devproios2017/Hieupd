@@ -19,7 +19,18 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func actioncham(_ sender: UITapGestureRecognizer) {
+        print("abc")
+    }
+    @IBAction func rotation(_ sender: UIRotationGestureRecognizer) {
+        print("quay man hinh")
+    }
+    @IBAction func actionpan(_ sender: UIPanGestureRecognizer) {
+        print("action pan")
+    }
+    
+    
+    
 
 }
 
