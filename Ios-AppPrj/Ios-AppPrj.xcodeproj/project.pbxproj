@@ -13,6 +13,7 @@
 		EABADA9C1ECDCC32006CC59D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EABADA9B1ECDCC32006CC59D /* Assets.xcassets */; };
 		EABADA9F1ECDCC32006CC59D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EABADA9D1ECDCC32006CC59D /* LaunchScreen.storyboard */; };
 		EABADAA71ECDE080006CC59D /* Man2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABADAA61ECDE080006CC59D /* Man2ViewController.swift */; };
+		EAFB42741ED4734100F09C40 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EAFB42731ED4734100F09C40 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EABADA9E1ECDCC32006CC59D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EABADAA01ECDCC32006CC59D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EABADAA61ECDE080006CC59D /* Man2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Man2ViewController.swift; path = ../Man2ViewController.swift; sourceTree = "<group>"; };
+		EAFB42731ED4734100F09C40 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				EABADA9B1ECDCC32006CC59D /* Assets.xcassets */,
 				EABADA9D1ECDCC32006CC59D /* LaunchScreen.storyboard */,
 				EABADAA01ECDCC32006CC59D /* Info.plist */,
+				EAFB42731ED4734100F09C40 /* Settings.bundle */,
 			);
 			path = "Ios-AppPrj";
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAFB42741ED4734100F09C40 /* Settings.bundle in Resources */,
 				EABADA9F1ECDCC32006CC59D /* LaunchScreen.storyboard in Resources */,
 				EABADA9C1ECDCC32006CC59D /* Assets.xcassets in Resources */,
 				EABADA9A1ECDCC32006CC59D /* Main.storyboard in Resources */,
@@ -307,6 +311,7 @@
 				EABADAA51ECDCC32006CC59D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

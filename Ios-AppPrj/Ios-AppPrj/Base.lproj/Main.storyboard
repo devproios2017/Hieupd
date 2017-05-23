@@ -22,11 +22,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQv-0S-xrl">
-                                <rect key="frame" x="149" y="70" width="76" height="30"/>
+                                <rect key="frame" x="149" y="333" width="76" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button test"/>
                                 <connections>
                                     <segue destination="pGF-fg-dCc" kind="show" id="aun-6R-ZYO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAi-3i-8JD">
+                                <rect key="frame" x="54" y="67" width="41" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JnQ-UY-KOU">
+                                <rect key="frame" x="16" y="112" width="79" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0dT-5o-bLm">
+                                <rect key="frame" x="110" y="62" width="249" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qIs-he-c2b">
+                                <rect key="frame" x="110" y="107" width="249" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocS-JJ-1AL">
+                                <rect key="frame" x="110" y="165" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Đăng ký"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0n-QM-jBi">
+                                <rect key="frame" x="187" y="165" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Đăng nhập"/>
+                                <connections>
+                                    <action selector="dang_nhap" destination="BYZ-38-t0r" eventType="touchUpInside" id="WaA-hK-HGz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -38,6 +79,10 @@
                             <outletCollection property="gestureRecognizers" destination="9kw-DQ-5SW" appends="YES" id="ArQ-id-c5V"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="textfield_password" destination="qIs-he-c2b" id="bUw-Y5-ioD"/>
+                        <outlet property="textfield_username" destination="0dT-5o-bLm" id="Udn-7i-I1c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="dMJ-9S-3k7">
@@ -56,6 +101,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="100" y="69.715142428785612"/>
         </scene>
         <!--Man2 View Controller-->
         <scene sceneID="kzT-wc-nHj">
@@ -76,6 +122,9 @@
                                 <state key="normal" title="Ve man hinh 1">
                                     <color key="titleColor" red="1" green="0.99667156517022892" blue="0.99273333332403302" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="kn4-jn-Ptp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.41474002886748551" green="0.58218707961686" blue="1" alpha="1" colorSpace="calibratedRGB"/>
